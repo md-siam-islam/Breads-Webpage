@@ -1,0 +1,220 @@
+/* body font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sevillana&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AR:wght@100..400&family=Sevillana&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AR:wght@100..400&family=Sevillana&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+}
+/* nav section start */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    width: 100%;
+}
+nav h1{
+    font-family: "Playwrite AR", cursive;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.icon i{
+    font-size: 2rem;
+}
+/* nav section end */
+/* banner section start */
+.banner{
+    background-image: url(./imags/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+.banner-text h3{
+    font-family: "Bona Nova SC", serif;
+    color: #ffffffbd;
+    letter-spacing: 5px;
+    font-size: 2rem;
+    font-weight: normal;
+}
+.banner-text h1{
+    font-size: 5rem;
+    color:#ffffff;
+    font-weight: 800;
+    line-height: 90%;
+}
+.banner-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;justify-content: center;
+    padding-top: 90px;
+}
+.banner-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px 0px;
+}
+
+.card-1 h4{
+    font-weight: 900;
+    font-size: 1.30rem;
+    margin-bottom: 15px;
+}
+.card-1 p{
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #ffffff9c;
+    font-weight: normal;
+}
+.card-2 h4{
+    font-weight: 900;
+    font-size: 1.30rem;
+    margin-bottom: 15px;
+}
+.card-2 p{
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #ffffff9c;
+    font-weight: normal;
+}
+.card-3 h4{
+    font-weight: 900;
+    font-size: 1.30rem;
+    margin-bottom: 45px;
+}
+.card-3 p{
+    font-size: 1rem;
+    margin-bottom: 14px;
+    color: #ffffffec;
+    font-weight: normal;
+}
+/* Baking-container section start */
+.Baking-container{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 150px;
+
+}
+.baking-text{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 100px;
+}
+.baking-card-content{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    gap: 20px;
+    
+}
+.baking-card img{
+    width: 15%;
+    height: 50px;
+}
+.baking-card{
+    width: auto;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+.baking-card h3{
+    margin-bottom: 20px;
+    font-size: 1.30rem;
+}
+.baking-card p{
+    font-size: 1rem;
+    color: rgba(112, 112, 112, 0.945);
+}
+
+/* baking section end */
+
+
+/* cakes section start */
+.cake-container{
+    background-image: url(./imags/cake-banner.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cake-content{
+    padding: 100px 0px;
+}
+.cake-content h1{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.cake-content p{
+    font-size: 1rem;
+    color: #ffffffbd;
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+.cake-content button{
+    padding: 10px 40px;
+    background: transparent;
+    border-radius: 20px;
+    color: rgb(196, 18, 18);
+    letter-spacing: 5px;
+    border: 2px solid #fff;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.cake-content button:hover{
+    background-color: #fff;
+    box-shadow: 0 0 30px black;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:576px){
+    nav{
+        justify-content: space-between;
+    }
+    .banner-card{
+        flex-direction: column;
+        padding-top: 30px;
+        padding-left: 0px;
+    }
+
+    .baking-card-content{
+        grid-template-columns: repeat(1 ,1fr);
+        
+    }
+    .baking-card{
+        gap: 10px;
+        padding: 20px 0px;
+    }
+    .Baking-container{
+        width: 80%;
+    }
+    .baking-text{
+        font-size:1.50rem;
+    }
+    .cake-content {
+        padding: 100px 50px;
+    }
+}
